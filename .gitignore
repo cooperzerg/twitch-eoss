@@ -17,3 +17,7 @@ streamerbot/*.png
 streamerbot/Streamer.bot.exe.WebView2/
 streamerbot/logs/
 streamerbot/backup/
+streamerbot/data/*.bak
+streamerbot/data/*.db
+streamerbot/data/*.dat
+streamerbot/data/*.cache
