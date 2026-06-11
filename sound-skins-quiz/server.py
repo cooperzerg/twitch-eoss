@@ -145,10 +145,7 @@ def next_round():
     current_question = q
     current_options = q["options"]
     state = "playing"
-vote_map = {"A": 0, "B": 0, "C": 0, "D": 0}
-voters = {"A": [], "B": [], "C": [], "D": []}
-quiz_round = 0
-quiz_total = 0
+    vote_map = {"A": 0, "B": 0, "C": 0, "D": 0}
     voters = {"A": [], "B": [], "C": [], "D": []}
     quiz_round += 1
 
