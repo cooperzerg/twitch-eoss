@@ -1,1 +1,1 @@
-﻿{"version":1,"t":"2026-06-10T02:52:18.8505734+04:00","connections":[{"id":"3743b3bd-50e9-4eb1-9794-bf639e7573fb","name":"obs","obsVersion":1,"host":"127.0.0.1","port":4455,"autoConnect":true,"reconnectOnDisconnect":true,"password":"J4XQL1fFLDmXeODI","retryInterval":20,"default":true}]}
+﻿{"version":1,"t":"2026-06-12T03:29:03.320631+04:00","connections":[{"id":"3743b3bd-50e9-4eb1-9794-bf639e7573fb","name":"obs","obsVersion":1,"host":"127.0.0.1","port":4455,"autoConnect":true,"reconnectOnDisconnect":true,"password":"J4XQL1fFLDmXeODI","retryInterval":20,"default":true}]}

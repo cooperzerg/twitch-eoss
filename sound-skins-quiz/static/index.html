@@ -51,28 +51,23 @@ body {
 }
 .card {
   width: 260px;
-  height: 400px;
   background: rgba(20, 20, 35, 0.92);
   border: 3px solid rgba(80, 80, 120, 0.6);
   border-radius: 16px;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  padding: 12px 8px;
-  transition: all 0.3s ease;
+  padding: 10px;
 }
 .options {
   display: flex;
   flex-direction: column;
   gap: 6px;
-  width: 100%;
-  flex: 1;
 }
 .option {
   display: flex;
   align-items: center;
-  gap: 8px;
-  padding: 4px 8px;
+  gap: 10px;
+  padding: 6px;
   border-radius: 8px;
   background: rgba(255,255,255,0.03);
   border: 1px solid transparent;
@@ -96,15 +91,15 @@ body {
   flex-shrink: 0;
 }
 .option img {
-  width: 50px;
-  height: 50px;
+  width: 80px;
+  height: 80px;
   object-fit: contain;
   border-radius: 4px;
   flex-shrink: 0;
 }
 .option .name {
   color: #ffd966;
-  font-size: 12px;
+  font-size: 13px;
   font-weight: bold;
 }
 .result-text {
@@ -170,8 +165,7 @@ function renderPlaying(data) {
     html += '<div class="round-info">Раунд ' + data.round + ' из ' + data.total_rounds + '</div>';
   }
   html += '<div class="timer-bar"><div class="timer-fill" id="timer"></div></div>';
-  html += '<div class="card">';
-  html += '<div class="options">';
+  html += '<div class="card"><div class="options">';
   for (const opt of data.options) {
     html += '<div class="option">' +
       '<div class="label">' + opt.label + '</div>' +
@@ -186,8 +180,7 @@ function renderPlaying(data) {
 function renderFeedback(data) {
   let html = '<div class="weapon-label">' + data.weapon + '</div>';
   html += '<div class="result-text">Ответ: ' + data.correct_collection + '</div>';
-  html += '<div class="card">';
-  html += '<div class="options">';
+  html += '<div class="card"><div class="options">';
   for (const opt of data.options) {
     let cls = '';
     if (opt.label === data.correct_label) cls = 'correct';

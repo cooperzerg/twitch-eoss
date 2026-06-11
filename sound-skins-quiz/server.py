@@ -126,7 +126,7 @@ def serve_img(name):
 @app.route("/next_round", methods=["POST"])
 def next_round():
     global current_question, current_options, state, vote_map, voters, quiz_round, quiz_total, score, total_played
-    data = request.get_json(force=True) if request.is_json else {}
+    data = request.get_json(force=True, silent=True) or {}
 
     if state == "idle":
         quiz_total = data.get("questions", 1)
