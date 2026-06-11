@@ -24,6 +24,9 @@ state = "idle"
 score = 0
 total_played = 0
 vote_map = {"A": 0, "B": 0, "C": 0, "D": 0}
+voters = {"A": [], "B": [], "C": [], "D": []}
+quiz_round = 0
+quiz_total = 0
 
 CHAR_MAP = {
     "a": "A", "A": "A", "а": "A", "А": "A",
