@@ -1,927 +1,927 @@
 [
   {
     "collection": "Aemondir",
-    "sfx": "/home/eoss/Рабочий стол/sounds&skins/sfx/Aemondir.mp3",
+    "sfx": "C:\\Users\\eoss\\twitch-eoss\\sound-skins-quiz\\sfx\\Aemondir.mp3",
     "skins": [
       {
         "weapon": "Sheriff",
-        "image": "/home/eoss/Рабочий стол/sounds&skins/img/Aemondir_Sheriff.webp"
+        "image": "C:\\Users\\eoss\\twitch-eoss\\sound-skins-quiz\\img\\Aemondir_Sheriff.webp"
       },
       {
         "weapon": "Vandal",
-        "image": "/home/eoss/Рабочий стол/sounds&skins/img/Aemondir_Vandal.webp"
+        "image": "C:\\Users\\eoss\\twitch-eoss\\sound-skins-quiz\\img\\Aemondir_Vandal.webp"
       }
     ]
   },
   {
     "collection": "Araxys",
-    "sfx": "/home/eoss/Рабочий стол/sounds&skins/sfx/Araxys.mp3",
+    "sfx": "C:\\Users\\eoss\\twitch-eoss\\sound-skins-quiz\\sfx\\Araxys.mp3",
     "skins": [
       {
+        "weapon": "Operator",
+        "image": "C:\\Users\\eoss\\twitch-eoss\\sound-skins-quiz\\img\\Araxys_Operator.webp"
+      },
+      {
         "weapon": "Phantom",
-        "image": "/home/eoss/Рабочий стол/sounds&skins/img/Araxys_Phantom.webp"
+        "image": "C:\\Users\\eoss\\twitch-eoss\\sound-skins-quiz\\img\\Araxys_Phantom.webp"
       },
       {
         "weapon": "Sheriff",
-        "image": "/home/eoss/Рабочий стол/sounds&skins/img/Araxys_Sheriff.webp"
+        "image": "C:\\Users\\eoss\\twitch-eoss\\sound-skins-quiz\\img\\Araxys_Sheriff.webp"
       },
       {
         "weapon": "Vandal",
-        "image": "/home/eoss/Рабочий стол/sounds&skins/img/Araxys_Vandal.webp"
-      },
-      {
-        "weapon": "Operator",
-        "image": "/home/eoss/Рабочий стол/sounds&skins/img/Araxys_Operator.webp"
+        "image": "C:\\Users\\eoss\\twitch-eoss\\sound-skins-quiz\\img\\Araxys_Vandal.webp"
       }
     ]
   },
   {
     "collection": "Arcane",
-    "sfx": "/home/eoss/Рабочий стол/sounds&skins/sfx/Arcane.mp3",
+    "sfx": "C:\\Users\\eoss\\twitch-eoss\\sound-skins-quiz\\sfx\\Arcane.mp3",
     "skins": [
       {
         "weapon": "Sheriff",
-        "image": "/home/eoss/Рабочий стол/sounds&skins/img/Arcane_Sheriff.webp"
+        "image": "C:\\Users\\eoss\\twitch-eoss\\sound-skins-quiz\\img\\Arcane_Sheriff.webp"
       },
       {
         "weapon": "Vandal",
-        "image": "/home/eoss/Рабочий стол/sounds&skins/img/Arcane_Vandal.webp"
+        "image": "C:\\Users\\eoss\\twitch-eoss\\sound-skins-quiz\\img\\Arcane_Vandal.webp"
       }
     ]
   },
   {
     "collection": "Ayakashi",
-    "sfx": "/home/eoss/Рабочий стол/sounds&skins/sfx/Ayakashi.mp3",
+    "sfx": "C:\\Users\\eoss\\twitch-eoss\\sound-skins-quiz\\sfx\\Ayakashi.mp3",
     "skins": [
       {
         "weapon": "Ghost",
-        "image": "/home/eoss/Рабочий стол/sounds&skins/img/Ayakashi_Ghost.webp"
+        "image": "C:\\Users\\eoss\\twitch-eoss\\sound-skins-quiz\\img\\Ayakashi_Ghost.webp"
       },
       {
         "weapon": "Phantom",
-        "image": "/home/eoss/Рабочий стол/sounds&skins/img/Ayakashi_Phantom.webp"
+        "image": "C:\\Users\\eoss\\twitch-eoss\\sound-skins-quiz\\img\\Ayakashi_Phantom.webp"
       }
     ]
   },
   {
     "collection": "Blackthorn",
-    "sfx": "/home/eoss/Рабочий стол/sounds&skins/sfx/Blackthorn.mp3",
+    "sfx": "C:\\Users\\eoss\\twitch-eoss\\sound-skins-quiz\\sfx\\Blackthorn.mp3",
     "skins": [
       {
         "weapon": "Vandal",
-        "image": "/home/eoss/Рабочий стол/sounds&skins/img/Blackthorn_Vandal.webp"
+        "image": "C:\\Users\\eoss\\twitch-eoss\\sound-skins-quiz\\img\\Blackthorn_Vandal.webp"
       }
     ]
   },
   {
     "collection": "BlastX",
-    "sfx": "/home/eoss/Рабочий стол/sounds&skins/sfx/BlastX.mp3",
+    "sfx": "C:\\Users\\eoss\\twitch-eoss\\sound-skins-quiz\\sfx\\BlastX.mp3",
     "skins": [
       {
         "weapon": "Phantom",
-        "image": "/home/eoss/Рабочий стол/sounds&skins/img/BlastX_Phantom.webp"
+        "image": "C:\\Users\\eoss\\twitch-eoss\\sound-skins-quiz\\img\\BlastX_Phantom.webp"
       }
     ]
   },
   {
     "collection": "Bolt",
-    "sfx": "/home/eoss/Рабочий стол/sounds&skins/sfx/Bolt.mp3",
+    "sfx": "C:\\Users\\eoss\\twitch-eoss\\sound-skins-quiz\\sfx\\Bolt.mp3",
     "skins": [
       {
         "weapon": "Phantom",
-        "image": "/home/eoss/Рабочий стол/sounds&skins/img/Bolt_Phantom.webp"
+        "image": "C:\\Users\\eoss\\twitch-eoss\\sound-skins-quiz\\img\\Bolt_Phantom.webp"
       }
     ]
   },
   {
     "collection": "Bubblegum",
-    "sfx": "/home/eoss/Рабочий стол/sounds&skins/sfx/Bubblegum.mp3",
+    "sfx": "C:\\Users\\eoss\\twitch-eoss\\sound-skins-quiz\\sfx\\Bubblegum.mp3",
     "skins": [
       {
         "weapon": "Operator",
-        "image": "/home/eoss/Рабочий стол/sounds&skins/img/Bubblegum_Operator.webp"
+        "image": "C:\\Users\\eoss\\twitch-eoss\\sound-skins-quiz\\img\\Bubblegum_Operator.webp"
       },
       {
         "weapon": "Phantom",
-        "image": "/home/eoss/Рабочий стол/sounds&skins/img/Bubblegum_Phantom.webp"
+        "image": "C:\\Users\\eoss\\twitch-eoss\\sound-skins-quiz\\img\\Bubblegum_Phantom.webp"
       }
     ]
   },
   {
     "collection": "CYRAX",
-    "sfx": "/home/eoss/Рабочий стол/sounds&skins/sfx/CYRAX.mp3",
+    "sfx": "C:\\Users\\eoss\\twitch-eoss\\sound-skins-quiz\\sfx\\CYRAX.mp3",
     "skins": [
       {
         "weapon": "Ghost",
-        "image": "/home/eoss/Рабочий стол/sounds&skins/img/CYRAX_Ghost.webp"
+        "image": "C:\\Users\\eoss\\twitch-eoss\\sound-skins-quiz\\img\\CYRAX_Ghost.webp"
       },
       {
         "weapon": "Vandal",
-        "image": "/home/eoss/Рабочий стол/sounds&skins/img/CYRAX_Vandal.webp"
+        "image": "C:\\Users\\eoss\\twitch-eoss\\sound-skins-quiz\\img\\CYRAX_Vandal.webp"
       }
     ]
   },
   {
     "collection": "Champions2021",
-    "sfx": "/home/eoss/Рабочий стол/sounds&skins/sfx/Champions2021.mp3",
+    "sfx": "C:\\Users\\eoss\\twitch-eoss\\sound-skins-quiz\\sfx\\Champions2021.mp3",
     "skins": [
       {
         "weapon": "Vandal",
-        "image": "/home/eoss/Рабочий стол/sounds&skins/img/Champions2021_Vandal.webp"
+        "image": "C:\\Users\\eoss\\twitch-eoss\\sound-skins-quiz\\img\\Champions2021_Vandal.webp"
       }
     ]
   },
   {
     "collection": "Champions2022",
-    "sfx": "/home/eoss/Рабочий стол/sounds&skins/sfx/Champions2022.mp3",
+    "sfx": "C:\\Users\\eoss\\twitch-eoss\\sound-skins-quiz\\sfx\\Champions2022.mp3",
     "skins": [
       {
         "weapon": "Phantom",
-        "image": "/home/eoss/Рабочий стол/sounds&skins/img/Champions2022_Phantom.webp"
+        "image": "C:\\Users\\eoss\\twitch-eoss\\sound-skins-quiz\\img\\Champions2022_Phantom.webp"
       }
     ]
   },
   {
     "collection": "Champions2023",
-    "sfx": "/home/eoss/Рабочий стол/sounds&skins/sfx/Champions2023.mp3",
+    "sfx": "C:\\Users\\eoss\\twitch-eoss\\sound-skins-quiz\\sfx\\Champions2023.mp3",
     "skins": [
       {
         "weapon": "Vandal",
-        "image": "/home/eoss/Рабочий стол/sounds&skins/img/Champions2023_Vandal.webp"
+        "image": "C:\\Users\\eoss\\twitch-eoss\\sound-skins-quiz\\img\\Champions2023_Vandal.webp"
       }
     ]
   },
   {
     "collection": "Champions2024",
-    "sfx": "/home/eoss/Рабочий стол/sounds&skins/sfx/Champions2024.mp3",
+    "sfx": "C:\\Users\\eoss\\twitch-eoss\\sound-skins-quiz\\sfx\\Champions2024.mp3",
     "skins": [
       {
         "weapon": "Phantom",
-        "image": "/home/eoss/Рабочий стол/sounds&skins/img/Champions2024_Phantom.webp"
+        "image": "C:\\Users\\eoss\\twitch-eoss\\sound-skins-quiz\\img\\Champions2024_Phantom.webp"
       }
     ]
   },
   {
     "collection": "Champions2025",
-    "sfx": "/home/eoss/Рабочий стол/sounds&skins/sfx/Champions2025.mp3",
+    "sfx": "C:\\Users\\eoss\\twitch-eoss\\sound-skins-quiz\\sfx\\Champions2025.mp3",
     "skins": [
       {
         "weapon": "Vandal",
-        "image": "/home/eoss/Рабочий стол/sounds&skins/img/Champions2025_Vandal.webp"
+        "image": "C:\\Users\\eoss\\twitch-eoss\\sound-skins-quiz\\img\\Champions2025_Vandal.webp"
       }
     ]
   },
   {
     "collection": "Chaos",
-    "sfx": "/home/eoss/Рабочий стол/sounds&skins/sfx/Chaos.mp3",
+    "sfx": "C:\\Users\\eoss\\twitch-eoss\\sound-skins-quiz\\sfx\\Chaos.mp3",
     "skins": [
       {
-        "weapon": "Sheriff",
-        "image": "/home/eoss/Рабочий стол/sounds&skins/img/Chaos_Sheriff.webp"
-      },
-      {
         "weapon": "Operator",
-        "image": "/home/eoss/Рабочий стол/sounds&skins/img/Chaos_Operator.webp"
-      },
-      {
-        "weapon": "Vandal",
-        "image": "/home/eoss/Рабочий стол/sounds&skins/img/Chaos_Vandal.webp"
+        "image": "C:\\Users\\eoss\\twitch-eoss\\sound-skins-quiz\\img\\Chaos_Operator.webp"
       },
       {
         "weapon": "Phantom",
-        "image": "/home/eoss/Рабочий стол/sounds&skins/img/Chaos_Phantom.webp"
+        "image": "C:\\Users\\eoss\\twitch-eoss\\sound-skins-quiz\\img\\Chaos_Phantom.webp"
+      },
+      {
+        "weapon": "Sheriff",
+        "image": "C:\\Users\\eoss\\twitch-eoss\\sound-skins-quiz\\img\\Chaos_Sheriff.webp"
+      },
+      {
+        "weapon": "Vandal",
+        "image": "C:\\Users\\eoss\\twitch-eoss\\sound-skins-quiz\\img\\Chaos_Vandal.webp"
       }
     ]
   },
   {
     "collection": "ChronoVoid",
-    "sfx": "/home/eoss/Рабочий стол/sounds&skins/sfx/ChronoVoid.mp3",
+    "sfx": "C:\\Users\\eoss\\twitch-eoss\\sound-skins-quiz\\sfx\\ChronoVoid.mp3",
     "skins": [
       {
         "weapon": "Phantom",
-        "image": "/home/eoss/Рабочий стол/sounds&skins/img/ChronoVoid_Phantom.webp"
-      },
-      {
-        "weapon": "Vandal",
-        "image": "/home/eoss/Рабочий стол/sounds&skins/img/ChronoVoid_Vandal.webp"
+        "image": "C:\\Users\\eoss\\twitch-eoss\\sound-skins-quiz\\img\\ChronoVoid_Phantom.webp"
       },
       {
         "weapon": "Sheriff",
-        "image": "/home/eoss/Рабочий стол/sounds&skins/img/ChronoVoid_Sheriff.webp"
+        "image": "C:\\Users\\eoss\\twitch-eoss\\sound-skins-quiz\\img\\ChronoVoid_Sheriff.webp"
+      },
+      {
+        "weapon": "Vandal",
+        "image": "C:\\Users\\eoss\\twitch-eoss\\sound-skins-quiz\\img\\ChronoVoid_Vandal.webp"
       }
     ]
   },
   {
     "collection": "Crisis",
-    "sfx": "/home/eoss/Рабочий стол/sounds&skins/sfx/Crisis.mp3",
+    "sfx": "C:\\Users\\eoss\\twitch-eoss\\sound-skins-quiz\\sfx\\Crisis.mp3",
     "skins": [
       {
         "weapon": "Phantom",
-        "image": "/home/eoss/Рабочий стол/sounds&skins/img/Crisis_Phantom.webp"
+        "image": "C:\\Users\\eoss\\twitch-eoss\\sound-skins-quiz\\img\\Crisis_Phantom.webp"
       }
     ]
   },
   {
     "collection": "Cryostasis",
-    "sfx": "/home/eoss/Рабочий стол/sounds&skins/sfx/Cryostasis.mp3",
+    "sfx": "C:\\Users\\eoss\\twitch-eoss\\sound-skins-quiz\\sfx\\Cryostasis.mp3",
     "skins": [
       {
         "weapon": "Operator",
-        "image": "/home/eoss/Рабочий стол/sounds&skins/img/Cryostasis_Operator.webp"
+        "image": "C:\\Users\\eoss\\twitch-eoss\\sound-skins-quiz\\img\\Cryostasis_Operator.webp"
       },
       {
         "weapon": "Vandal",
-        "image": "/home/eoss/Рабочий стол/sounds&skins/img/Cryostasis_Vandal.webp"
+        "image": "C:\\Users\\eoss\\twitch-eoss\\sound-skins-quiz\\img\\Cryostasis_Vandal.webp"
       }
     ]
   },
   {
     "collection": "Dancer",
-    "sfx": "/home/eoss/Рабочий стол/sounds&skins/sfx/Dancer.mp3",
+    "sfx": "C:\\Users\\eoss\\twitch-eoss\\sound-skins-quiz\\sfx\\Dancer.mp3",
     "skins": [
       {
         "weapon": "Ghost",
-        "image": "/home/eoss/Рабочий стол/sounds&skins/img/Dancer_Ghost.webp"
-      },
-      {
-        "weapon": "Phantom",
-        "image": "/home/eoss/Рабочий стол/sounds&skins/img/Dancer_Phantom.webp"
+        "image": "C:\\Users\\eoss\\twitch-eoss\\sound-skins-quiz\\img\\Dancer_Ghost.webp"
       },
       {
         "weapon": "Operator",
-        "image": "/home/eoss/Рабочий стол/sounds&skins/img/Dancer_Operator.webp"
+        "image": "C:\\Users\\eoss\\twitch-eoss\\sound-skins-quiz\\img\\Dancer_Operator.webp"
+      },
+      {
+        "weapon": "Phantom",
+        "image": "C:\\Users\\eoss\\twitch-eoss\\sound-skins-quiz\\img\\Dancer_Phantom.webp"
       }
     ]
   },
   {
     "collection": "Divergence",
-    "sfx": "/home/eoss/Рабочий стол/sounds&skins/sfx/Divergence.mp3",
+    "sfx": "C:\\Users\\eoss\\twitch-eoss\\sound-skins-quiz\\sfx\\Divergence.mp3",
     "skins": [
       {
         "weapon": "Operator",
-        "image": "/home/eoss/Рабочий стол/sounds&skins/img/Divergence_Operator.webp"
+        "image": "C:\\Users\\eoss\\twitch-eoss\\sound-skins-quiz\\img\\Divergence_Operator.webp"
       },
       {
         "weapon": "Vandal",
-        "image": "/home/eoss/Рабочий стол/sounds&skins/img/Divergence_Vandal.webp"
+        "image": "C:\\Users\\eoss\\twitch-eoss\\sound-skins-quiz\\img\\Divergence_Vandal.webp"
       }
     ]
   },
   {
     "collection": "Dolmir",
-    "sfx": "/home/eoss/Рабочий стол/sounds&skins/sfx/Dolmir.mp3",
+    "sfx": "C:\\Users\\eoss\\twitch-eoss\\sound-skins-quiz\\sfx\\Dolmir.mp3",
     "skins": [
       {
         "weapon": "Vandal",
-        "image": "/home/eoss/Рабочий стол/sounds&skins/img/Dolmir_Vandal.webp"
+        "image": "C:\\Users\\eoss\\twitch-eoss\\sound-skins-quiz\\img\\Dolmir_Vandal.webp"
       }
     ]
   },
   {
     "collection": "Doombringer",
-    "sfx": "/home/eoss/Рабочий стол/sounds&skins/sfx/Doombringer.mp3",
+    "sfx": "C:\\Users\\eoss\\twitch-eoss\\sound-skins-quiz\\sfx\\Doombringer.mp3",
     "skins": [
       {
         "weapon": "Phantom",
-        "image": "/home/eoss/Рабочий стол/sounds&skins/img/Doombringer_Phantom.webp"
+        "image": "C:\\Users\\eoss\\twitch-eoss\\sound-skins-quiz\\img\\Doombringer_Phantom.webp"
       },
       {
         "weapon": "Sheriff",
-        "image": "/home/eoss/Рабочий стол/sounds&skins/img/Doombringer_Sheriff.webp"
+        "image": "C:\\Users\\eoss\\twitch-eoss\\sound-skins-quiz\\img\\Doombringer_Sheriff.webp"
       }
     ]
   },
   {
     "collection": "EXO",
-    "sfx": "/home/eoss/Рабочий стол/sounds&skins/sfx/EXO.mp3",
+    "sfx": "C:\\Users\\eoss\\twitch-eoss\\sound-skins-quiz\\sfx\\EXO.mp3",
     "skins": [
       {
-        "weapon": "Vandal",
-        "image": "/home/eoss/Рабочий стол/sounds&skins/img/EXO_Vandal.webp"
+        "weapon": "Sheriff",
+        "image": "C:\\Users\\eoss\\twitch-eoss\\sound-skins-quiz\\img\\EXO_Sheriff.webp"
       },
       {
-        "weapon": "Sheriff",
-        "image": "/home/eoss/Рабочий стол/sounds&skins/img/EXO_Sheriff.webp"
+        "weapon": "Vandal",
+        "image": "C:\\Users\\eoss\\twitch-eoss\\sound-skins-quiz\\img\\EXO_Vandal.webp"
       }
     ]
   },
   {
     "collection": "Elderflame",
-    "sfx": "/home/eoss/Рабочий стол/sounds&skins/sfx/Elderflame.mp3",
+    "sfx": "C:\\Users\\eoss\\twitch-eoss\\sound-skins-quiz\\sfx\\Elderflame.mp3",
     "skins": [
       {
         "weapon": "Operator",
-        "image": "/home/eoss/Рабочий стол/sounds&skins/img/Elderflame_Operator.webp"
+        "image": "C:\\Users\\eoss\\twitch-eoss\\sound-skins-quiz\\img\\Elderflame_Operator.webp"
       },
       {
         "weapon": "Vandal",
-        "image": "/home/eoss/Рабочий стол/sounds&skins/img/Elderflame_Vandal.webp"
+        "image": "C:\\Users\\eoss\\twitch-eoss\\sound-skins-quiz\\img\\Elderflame_Vandal.webp"
       }
     ]
   },
   {
     "collection": "Entertainment",
-    "sfx": "/home/eoss/Рабочий стол/sounds&skins/sfx/Entertainment.mp3",
+    "sfx": "C:\\Users\\eoss\\twitch-eoss\\sound-skins-quiz\\sfx\\Entertainment.mp3",
     "skins": [
       {
-        "weapon": "Operator",
-        "image": "/home/eoss/Рабочий стол/sounds&skins/img/Entertainment_Operator.webp"
+        "weapon": "Ghost",
+        "image": "C:\\Users\\eoss\\twitch-eoss\\sound-skins-quiz\\img\\Entertainment_Ghost.webp"
       },
       {
-        "weapon": "Ghost",
-        "image": "/home/eoss/Рабочий стол/sounds&skins/img/Entertainment_Ghost.webp"
+        "weapon": "Operator",
+        "image": "C:\\Users\\eoss\\twitch-eoss\\sound-skins-quiz\\img\\Entertainment_Operator.webp"
       },
       {
         "weapon": "Phantom",
-        "image": "/home/eoss/Рабочий стол/sounds&skins/img/Entertainment_Phantom.webp"
+        "image": "C:\\Users\\eoss\\twitch-eoss\\sound-skins-quiz\\img\\Entertainment_Phantom.webp"
       }
     ]
   },
   {
     "collection": "Evori",
-    "sfx": "/home/eoss/Рабочий стол/sounds&skins/sfx/Evori.mp3",
+    "sfx": "C:\\Users\\eoss\\twitch-eoss\\sound-skins-quiz\\sfx\\Evori.mp3",
     "skins": [
       {
         "weapon": "Ghost",
-        "image": "/home/eoss/Рабочий стол/sounds&skins/img/Evori_Ghost.webp"
+        "image": "C:\\Users\\eoss\\twitch-eoss\\sound-skins-quiz\\img\\Evori_Ghost.webp"
       },
       {
         "weapon": "Vandal",
-        "image": "/home/eoss/Рабочий стол/sounds&skins/img/Evori_Vandal.webp"
+        "image": "C:\\Users\\eoss\\twitch-eoss\\sound-skins-quiz\\img\\Evori_Vandal.webp"
       }
     ]
   },
   {
     "collection": "Forsaken",
-    "sfx": "/home/eoss/Рабочий стол/sounds&skins/sfx/Forsaken.mp3",
+    "sfx": "C:\\Users\\eoss\\twitch-eoss\\sound-skins-quiz\\sfx\\Forsaken.mp3",
     "skins": [
       {
-        "weapon": "Vandal",
-        "image": "/home/eoss/Рабочий стол/sounds&skins/img/Forsaken_Vandal.webp"
+        "weapon": "Operator",
+        "image": "C:\\Users\\eoss\\twitch-eoss\\sound-skins-quiz\\img\\Forsaken_Operator.webp"
       },
       {
-        "weapon": "Operator",
-        "image": "/home/eoss/Рабочий стол/sounds&skins/img/Forsaken_Operator.webp"
+        "weapon": "Vandal",
+        "image": "C:\\Users\\eoss\\twitch-eoss\\sound-skins-quiz\\img\\Forsaken_Vandal.webp"
       }
     ]
   },
   {
     "collection": "Frontier",
-    "sfx": "/home/eoss/Рабочий стол/sounds&skins/sfx/Frontier.mp3",
+    "sfx": "C:\\Users\\eoss\\twitch-eoss\\sound-skins-quiz\\sfx\\Frontier.mp3",
     "skins": [
       {
         "weapon": "Phantom",
-        "image": "/home/eoss/Рабочий стол/sounds&skins/img/Frontier_Phantom.webp"
+        "image": "C:\\Users\\eoss\\twitch-eoss\\sound-skins-quiz\\img\\Frontier_Phantom.webp"
       },
       {
         "weapon": "Sheriff",
-        "image": "/home/eoss/Рабочий стол/sounds&skins/img/Frontier_Sheriff.webp"
+        "image": "C:\\Users\\eoss\\twitch-eoss\\sound-skins-quiz\\img\\Frontier_Sheriff.webp"
       }
     ]
   },
   {
     "collection": "Gaia",
-    "sfx": "/home/eoss/Рабочий стол/sounds&skins/sfx/Gaia.mp3",
+    "sfx": "C:\\Users\\eoss\\twitch-eoss\\sound-skins-quiz\\sfx\\Gaia.mp3",
     "skins": [
       {
         "weapon": "Ghost",
-        "image": "/home/eoss/Рабочий стол/sounds&skins/img/Gaia_Ghost.webp"
+        "image": "C:\\Users\\eoss\\twitch-eoss\\sound-skins-quiz\\img\\Gaia_Ghost.webp"
       },
       {
         "weapon": "Vandal",
-        "image": "/home/eoss/Рабочий стол/sounds&skins/img/Gaia_Vandal.webp"
+        "image": "C:\\Users\\eoss\\twitch-eoss\\sound-skins-quiz\\img\\Gaia_Vandal.webp"
       }
     ]
   },
   {
     "collection": "Glitchpop",
-    "sfx": "/home/eoss/Рабочий стол/sounds&skins/sfx/Glitchpop.mp3",
+    "sfx": "C:\\Users\\eoss\\twitch-eoss\\sound-skins-quiz\\sfx\\Glitchpop.mp3",
     "skins": [
       {
-        "weapon": "Vandal",
-        "image": "/home/eoss/Рабочий стол/sounds&skins/img/Glitchpop_Vandal.webp"
+        "weapon": "Operator",
+        "image": "C:\\Users\\eoss\\twitch-eoss\\sound-skins-quiz\\img\\Glitchpop_Operator.webp"
       },
       {
         "weapon": "Phantom",
-        "image": "/home/eoss/Рабочий стол/sounds&skins/img/Glitchpop_Phantom.webp"
+        "image": "C:\\Users\\eoss\\twitch-eoss\\sound-skins-quiz\\img\\Glitchpop_Phantom.webp"
       },
       {
-        "weapon": "Operator",
-        "image": "/home/eoss/Рабочий стол/sounds&skins/img/Glitchpop_Operator.webp"
+        "weapon": "Vandal",
+        "image": "C:\\Users\\eoss\\twitch-eoss\\sound-skins-quiz\\img\\Glitchpop_Vandal.webp"
       }
     ]
   },
   {
     "collection": "Helix",
-    "sfx": "/home/eoss/Рабочий стол/sounds&skins/sfx/Helix.mp3",
+    "sfx": "C:\\Users\\eoss\\twitch-eoss\\sound-skins-quiz\\sfx\\Helix.mp3",
     "skins": [
       {
         "weapon": "Phantom",
-        "image": "/home/eoss/Рабочий стол/sounds&skins/img/Helix_Phantom.webp"
+        "image": "C:\\Users\\eoss\\twitch-eoss\\sound-skins-quiz\\img\\Helix_Phantom.webp"
       }
     ]
   },
   {
     "collection": "Imperium",
-    "sfx": "/home/eoss/Рабочий стол/sounds&skins/sfx/Imperium.mp3",
+    "sfx": "C:\\Users\\eoss\\twitch-eoss\\sound-skins-quiz\\sfx\\Imperium.mp3",
     "skins": [
       {
         "weapon": "Operator",
-        "image": "/home/eoss/Рабочий стол/sounds&skins/img/Imperium_Operator.webp"
-      },
-      {
-        "weapon": "Vandal",
-        "image": "/home/eoss/Рабочий стол/sounds&skins/img/Imperium_Vandal.webp"
+        "image": "C:\\Users\\eoss\\twitch-eoss\\sound-skins-quiz\\img\\Imperium_Operator.webp"
       },
       {
         "weapon": "Sheriff",
-        "image": "/home/eoss/Рабочий стол/sounds&skins/img/Imperium_Sheriff.webp"
+        "image": "C:\\Users\\eoss\\twitch-eoss\\sound-skins-quiz\\img\\Imperium_Sheriff.webp"
+      },
+      {
+        "weapon": "Vandal",
+        "image": "C:\\Users\\eoss\\twitch-eoss\\sound-skins-quiz\\img\\Imperium_Vandal.webp"
       }
     ]
   },
   {
     "collection": "Ion",
-    "sfx": "/home/eoss/Рабочий стол/sounds&skins/sfx/Ion.mp3",
+    "sfx": "C:\\Users\\eoss\\twitch-eoss\\sound-skins-quiz\\sfx\\Ion.mp3",
     "skins": [
       {
         "weapon": "Operator",
-        "image": "/home/eoss/Рабочий стол/sounds&skins/img/Ion_Operator.webp"
+        "image": "C:\\Users\\eoss\\twitch-eoss\\sound-skins-quiz\\img\\Ion_Operator.webp"
       },
       {
         "weapon": "Phantom",
-        "image": "/home/eoss/Рабочий стол/sounds&skins/img/Ion_Phantom.webp"
-      },
-      {
-        "weapon": "Vandal",
-        "image": "/home/eoss/Рабочий стол/sounds&skins/img/Ion_Vandal.webp"
+        "image": "C:\\Users\\eoss\\twitch-eoss\\sound-skins-quiz\\img\\Ion_Phantom.webp"
       },
       {
         "weapon": "Sheriff",
-        "image": "/home/eoss/Рабочий стол/sounds&skins/img/Ion_Sheriff.webp"
+        "image": "C:\\Users\\eoss\\twitch-eoss\\sound-skins-quiz\\img\\Ion_Sheriff.webp"
+      },
+      {
+        "weapon": "Vandal",
+        "image": "C:\\Users\\eoss\\twitch-eoss\\sound-skins-quiz\\img\\Ion_Vandal.webp"
       }
     ]
   },
   {
     "collection": "KO",
-    "sfx": "/home/eoss/Рабочий стол/sounds&skins/sfx/KO.mp3",
+    "sfx": "C:\\Users\\eoss\\twitch-eoss\\sound-skins-quiz\\sfx\\KO.mp3",
     "skins": [
       {
-        "weapon": "Phantom",
-        "image": "/home/eoss/Рабочий стол/sounds&skins/img/KO_Phantom.webp"
+        "weapon": "Ghost",
+        "image": "C:\\Users\\eoss\\twitch-eoss\\sound-skins-quiz\\img\\KO_Ghost.webp"
       },
       {
         "weapon": "Operator",
-        "image": "/home/eoss/Рабочий стол/sounds&skins/img/KO_Operator.webp"
+        "image": "C:\\Users\\eoss\\twitch-eoss\\sound-skins-quiz\\img\\KO_Operator.webp"
       },
       {
-        "weapon": "Ghost",
-        "image": "/home/eoss/Рабочий стол/sounds&skins/img/KO_Ghost.webp"
+        "weapon": "Phantom",
+        "image": "C:\\Users\\eoss\\twitch-eoss\\sound-skins-quiz\\img\\KO_Phantom.webp"
       }
     ]
   },
   {
     "collection": "Kuronami",
-    "sfx": "/home/eoss/Рабочий стол/sounds&skins/sfx/Kuronami.mp3",
+    "sfx": "C:\\Users\\eoss\\twitch-eoss\\sound-skins-quiz\\sfx\\Kuronami.mp3",
     "skins": [
       {
-        "weapon": "Sheriff",
-        "image": "/home/eoss/Рабочий стол/sounds&skins/img/Kuronami_Sheriff.webp"
-      },
-      {
         "weapon": "Ghost",
-        "image": "/home/eoss/Рабочий стол/sounds&skins/img/Kuronami_Ghost.webp"
+        "image": "C:\\Users\\eoss\\twitch-eoss\\sound-skins-quiz\\img\\Kuronami_Ghost.webp"
       },
       {
         "weapon": "Operator",
-        "image": "/home/eoss/Рабочий стол/sounds&skins/img/Kuronami_Operator.webp"
+        "image": "C:\\Users\\eoss\\twitch-eoss\\sound-skins-quiz\\img\\Kuronami_Operator.webp"
       },
       {
         "weapon": "Phantom",
-        "image": "/home/eoss/Рабочий стол/sounds&skins/img/Kuronami_Phantom.webp"
+        "image": "C:\\Users\\eoss\\twitch-eoss\\sound-skins-quiz\\img\\Kuronami_Phantom.webp"
+      },
+      {
+        "weapon": "Sheriff",
+        "image": "C:\\Users\\eoss\\twitch-eoss\\sound-skins-quiz\\img\\Kuronami_Sheriff.webp"
       },
       {
         "weapon": "Vandal",
-        "image": "/home/eoss/Рабочий стол/sounds&skins/img/Kuronami_Vandal.webp"
+        "image": "C:\\Users\\eoss\\twitch-eoss\\sound-skins-quiz\\img\\Kuronami_Vandal.webp"
       }
     ]
   },
   {
     "collection": "Magepunk",
-    "sfx": "/home/eoss/Рабочий стол/sounds&skins/sfx/Magepunk.mp3",
+    "sfx": "C:\\Users\\eoss\\twitch-eoss\\sound-skins-quiz\\sfx\\Magepunk.mp3",
     "skins": [
       {
-        "weapon": "Vandal",
-        "image": "/home/eoss/Рабочий стол/sounds&skins/img/Magepunk_Vandal.webp"
-      },
-      {
-        "weapon": "Sheriff",
-        "image": "/home/eoss/Рабочий стол/sounds&skins/img/Magepunk_Sheriff.webp"
+        "weapon": "Ghost",
+        "image": "C:\\Users\\eoss\\twitch-eoss\\sound-skins-quiz\\img\\Magepunk_Ghost.webp"
       },
       {
         "weapon": "Operator",
-        "image": "/home/eoss/Рабочий стол/sounds&skins/img/Magepunk_Operator.webp"
+        "image": "C:\\Users\\eoss\\twitch-eoss\\sound-skins-quiz\\img\\Magepunk_Operator.webp"
       },
       {
         "weapon": "Phantom",
-        "image": "/home/eoss/Рабочий стол/sounds&skins/img/Magepunk_Phantom.webp"
+        "image": "C:\\Users\\eoss\\twitch-eoss\\sound-skins-quiz\\img\\Magepunk_Phantom.webp"
       },
       {
-        "weapon": "Ghost",
-        "image": "/home/eoss/Рабочий стол/sounds&skins/img/Magepunk_Ghost.webp"
+        "weapon": "Sheriff",
+        "image": "C:\\Users\\eoss\\twitch-eoss\\sound-skins-quiz\\img\\Magepunk_Sheriff.webp"
+      },
+      {
+        "weapon": "Vandal",
+        "image": "C:\\Users\\eoss\\twitch-eoss\\sound-skins-quiz\\img\\Magepunk_Vandal.webp"
       }
     ]
   },
   {
     "collection": "Meridian",
-    "sfx": "/home/eoss/Рабочий стол/sounds&skins/sfx/Meridian.mp3",
+    "sfx": "C:\\Users\\eoss\\twitch-eoss\\sound-skins-quiz\\sfx\\Meridian.mp3",
     "skins": [
       {
-        "weapon": "Vandal",
-        "image": "/home/eoss/Рабочий стол/sounds&skins/img/Meridian_Vandal.webp"
+        "weapon": "Operator",
+        "image": "C:\\Users\\eoss\\twitch-eoss\\sound-skins-quiz\\img\\Meridian_Operator.webp"
       },
       {
         "weapon": "Sheriff",
-        "image": "/home/eoss/Рабочий стол/sounds&skins/img/Meridian_Sheriff.webp"
+        "image": "C:\\Users\\eoss\\twitch-eoss\\sound-skins-quiz\\img\\Meridian_Sheriff.webp"
       },
       {
-        "weapon": "Operator",
-        "image": "/home/eoss/Рабочий стол/sounds&skins/img/Meridian_Operator.webp"
+        "weapon": "Vandal",
+        "image": "C:\\Users\\eoss\\twitch-eoss\\sound-skins-quiz\\img\\Meridian_Vandal.webp"
       }
     ]
   },
   {
     "collection": "Mystbloom",
-    "sfx": "/home/eoss/Рабочий стол/sounds&skins/sfx/Mystbloom.mp3",
+    "sfx": "C:\\Users\\eoss\\twitch-eoss\\sound-skins-quiz\\sfx\\Mystbloom.mp3",
     "skins": [
       {
-        "weapon": "Sheriff",
-        "image": "/home/eoss/Рабочий стол/sounds&skins/img/Mystbloom_Sheriff.webp"
+        "weapon": "Ghost",
+        "image": "C:\\Users\\eoss\\twitch-eoss\\sound-skins-quiz\\img\\Mystbloom_Ghost.webp"
       },
       {
         "weapon": "Operator",
-        "image": "/home/eoss/Рабочий стол/sounds&skins/img/Mystbloom_Operator.webp"
-      },
-      {
-        "weapon": "Vandal",
-        "image": "/home/eoss/Рабочий стол/sounds&skins/img/Mystbloom_Vandal.webp"
-      },
-      {
-        "weapon": "Ghost",
-        "image": "/home/eoss/Рабочий стол/sounds&skins/img/Mystbloom_Ghost.webp"
+        "image": "C:\\Users\\eoss\\twitch-eoss\\sound-skins-quiz\\img\\Mystbloom_Operator.webp"
       },
       {
         "weapon": "Phantom",
-        "image": "/home/eoss/Рабочий стол/sounds&skins/img/Mystbloom_Phantom.webp"
+        "image": "C:\\Users\\eoss\\twitch-eoss\\sound-skins-quiz\\img\\Mystbloom_Phantom.webp"
+      },
+      {
+        "weapon": "Sheriff",
+        "image": "C:\\Users\\eoss\\twitch-eoss\\sound-skins-quiz\\img\\Mystbloom_Sheriff.webp"
+      },
+      {
+        "weapon": "Vandal",
+        "image": "C:\\Users\\eoss\\twitch-eoss\\sound-skins-quiz\\img\\Mystbloom_Vandal.webp"
       }
     ]
   },
   {
     "collection": "Neptune",
-    "sfx": "/home/eoss/Рабочий стол/sounds&skins/sfx/Neptune.mp3",
+    "sfx": "C:\\Users\\eoss\\twitch-eoss\\sound-skins-quiz\\sfx\\Neptune.mp3",
     "skins": [
       {
         "weapon": "Phantom",
-        "image": "/home/eoss/Рабочий стол/sounds&skins/img/Neptune_Phantom.webp"
+        "image": "C:\\Users\\eoss\\twitch-eoss\\sound-skins-quiz\\img\\Neptune_Phantom.webp"
       },
       {
         "weapon": "Vandal",
-        "image": "/home/eoss/Рабочий стол/sounds&skins/img/Neptune_Vandal.webp"
+        "image": "C:\\Users\\eoss\\twitch-eoss\\sound-skins-quiz\\img\\Neptune_Vandal.webp"
       }
     ]
   },
   {
     "collection": "Nocturnum",
-    "sfx": "/home/eoss/Рабочий стол/sounds&skins/sfx/Nocturnum.mp3",
+    "sfx": "C:\\Users\\eoss\\twitch-eoss\\sound-skins-quiz\\sfx\\Nocturnum.mp3",
     "skins": [
       {
         "weapon": "Phantom",
-        "image": "/home/eoss/Рабочий стол/sounds&skins/img/Nocturnum_Phantom.webp"
+        "image": "C:\\Users\\eoss\\twitch-eoss\\sound-skins-quiz\\img\\Nocturnum_Phantom.webp"
       }
     ]
   },
   {
     "collection": "ORA",
-    "sfx": "/home/eoss/Рабочий стол/sounds&skins/sfx/ORA.mp3",
+    "sfx": "C:\\Users\\eoss\\twitch-eoss\\sound-skins-quiz\\sfx\\ORA.mp3",
     "skins": [
       {
-        "weapon": "Vandal",
-        "image": "/home/eoss/Рабочий стол/sounds&skins/img/ORA_Vandal.webp"
+        "weapon": "Operator",
+        "image": "C:\\Users\\eoss\\twitch-eoss\\sound-skins-quiz\\img\\ORA_Operator.webp"
       },
       {
         "weapon": "Phantom",
-        "image": "/home/eoss/Рабочий стол/sounds&skins/img/ORA_Phantom.webp"
-      },
-      {
-        "weapon": "Operator",
-        "image": "/home/eoss/Рабочий стол/sounds&skins/img/ORA_Operator.webp"
+        "image": "C:\\Users\\eoss\\twitch-eoss\\sound-skins-quiz\\img\\ORA_Phantom.webp"
       },
       {
         "weapon": "Sheriff",
-        "image": "/home/eoss/Рабочий стол/sounds&skins/img/ORA_Sheriff.webp"
+        "image": "C:\\Users\\eoss\\twitch-eoss\\sound-skins-quiz\\img\\ORA_Sheriff.webp"
+      },
+      {
+        "weapon": "Vandal",
+        "image": "C:\\Users\\eoss\\twitch-eoss\\sound-skins-quiz\\img\\ORA_Vandal.webp"
       }
     ]
   },
   {
     "collection": "Oni",
-    "sfx": "/home/eoss/Рабочий стол/sounds&skins/sfx/Oni.mp3",
+    "sfx": "C:\\Users\\eoss\\twitch-eoss\\sound-skins-quiz\\sfx\\Oni.mp3",
     "skins": [
       {
         "weapon": "Phantom",
-        "image": "/home/eoss/Рабочий стол/sounds&skins/img/Oni_Phantom.webp"
+        "image": "C:\\Users\\eoss\\twitch-eoss\\sound-skins-quiz\\img\\Oni_Phantom.webp"
       },
       {
         "weapon": "Vandal",
-        "image": "/home/eoss/Рабочий стол/sounds&skins/img/Oni_Vandal.webp"
+        "image": "C:\\Users\\eoss\\twitch-eoss\\sound-skins-quiz\\img\\Oni_Vandal.webp"
       }
     ]
   },
   {
     "collection": "Origin",
-    "sfx": "/home/eoss/Рабочий стол/sounds&skins/sfx/Origin.mp3",
+    "sfx": "C:\\Users\\eoss\\twitch-eoss\\sound-skins-quiz\\sfx\\Origin.mp3",
     "skins": [
       {
-        "weapon": "Vandal",
-        "image": "/home/eoss/Рабочий стол/sounds&skins/img/Origin_Vandal.webp"
+        "weapon": "Operator",
+        "image": "C:\\Users\\eoss\\twitch-eoss\\sound-skins-quiz\\img\\Origin_Operator.webp"
       },
       {
-        "weapon": "Operator",
-        "image": "/home/eoss/Рабочий стол/sounds&skins/img/Origin_Operator.webp"
+        "weapon": "Vandal",
+        "image": "C:\\Users\\eoss\\twitch-eoss\\sound-skins-quiz\\img\\Origin_Vandal.webp"
       }
     ]
   },
   {
     "collection": "Overdrive",
-    "sfx": "/home/eoss/Рабочий стол/sounds&skins/sfx/Overdrive.mp3",
+    "sfx": "C:\\Users\\eoss\\twitch-eoss\\sound-skins-quiz\\sfx\\Overdrive.mp3",
     "skins": [
       {
         "weapon": "Sheriff",
-        "image": "/home/eoss/Рабочий стол/sounds&skins/img/Overdrive_Sheriff.webp"
+        "image": "C:\\Users\\eoss\\twitch-eoss\\sound-skins-quiz\\img\\Overdrive_Sheriff.webp"
       },
       {
         "weapon": "Vandal",
-        "image": "/home/eoss/Рабочий стол/sounds&skins/img/Overdrive_Vandal.webp"
+        "image": "C:\\Users\\eoss\\twitch-eoss\\sound-skins-quiz\\img\\Overdrive_Vandal.webp"
       }
     ]
   },
   {
     "collection": "Phaseguard",
-    "sfx": "/home/eoss/Рабочий стол/sounds&skins/sfx/Phaseguard.mp3",
+    "sfx": "C:\\Users\\eoss\\twitch-eoss\\sound-skins-quiz\\sfx\\Phaseguard.mp3",
     "skins": [
       {
-        "weapon": "Vandal",
-        "image": "/home/eoss/Рабочий стол/sounds&skins/img/Phaseguard_Vandal.webp"
+        "weapon": "Ghost",
+        "image": "C:\\Users\\eoss\\twitch-eoss\\sound-skins-quiz\\img\\Phaseguard_Ghost.webp"
       },
       {
-        "weapon": "Ghost",
-        "image": "/home/eoss/Рабочий стол/sounds&skins/img/Phaseguard_Ghost.webp"
+        "weapon": "Vandal",
+        "image": "C:\\Users\\eoss\\twitch-eoss\\sound-skins-quiz\\img\\Phaseguard_Vandal.webp"
       }
     ]
   },
   {
     "collection": "Prime",
-    "sfx": "/home/eoss/Рабочий стол/sounds&skins/sfx/Prime.mp3",
+    "sfx": "C:\\Users\\eoss\\twitch-eoss\\sound-skins-quiz\\sfx\\Prime.mp3",
     "skins": [
       {
         "weapon": "Phantom",
-        "image": "/home/eoss/Рабочий стол/sounds&skins/img/Prime_Phantom.webp"
+        "image": "C:\\Users\\eoss\\twitch-eoss\\sound-skins-quiz\\img\\Prime_Phantom.webp"
       },
       {
         "weapon": "Vandal",
-        "image": "/home/eoss/Рабочий стол/sounds&skins/img/Prime_Vandal.webp"
+        "image": "C:\\Users\\eoss\\twitch-eoss\\sound-skins-quiz\\img\\Prime_Vandal.webp"
       }
     ]
   },
   {
     "collection": "Primordium",
-    "sfx": "/home/eoss/Рабочий стол/sounds&skins/sfx/Primordium.mp3",
+    "sfx": "C:\\Users\\eoss\\twitch-eoss\\sound-skins-quiz\\sfx\\Primordium.mp3",
     "skins": [
       {
-        "weapon": "Vandal",
-        "image": "/home/eoss/Рабочий стол/sounds&skins/img/Primordium_Vandal.webp"
+        "weapon": "Phantom",
+        "image": "C:\\Users\\eoss\\twitch-eoss\\sound-skins-quiz\\img\\Primordium_Phantom.webp"
       },
       {
-        "weapon": "Phantom",
-        "image": "/home/eoss/Рабочий стол/sounds&skins/img/Primordium_Phantom.webp"
+        "weapon": "Vandal",
+        "image": "C:\\Users\\eoss\\twitch-eoss\\sound-skins-quiz\\img\\Primordium_Vandal.webp"
       }
     ]
   },
   {
     "collection": "Protocol",
-    "sfx": "/home/eoss/Рабочий стол/sounds&skins/sfx/Protocol.mp3",
+    "sfx": "C:\\Users\\eoss\\twitch-eoss\\sound-skins-quiz\\sfx\\Protocol.mp3",
     "skins": [
       {
-        "weapon": "Sheriff",
-        "image": "/home/eoss/Рабочий стол/sounds&skins/img/Protocol_Sheriff.webp"
+        "weapon": "Phantom",
+        "image": "C:\\Users\\eoss\\twitch-eoss\\sound-skins-quiz\\img\\Protocol_Phantom.webp"
       },
       {
-        "weapon": "Phantom",
-        "image": "/home/eoss/Рабочий стол/sounds&skins/img/Protocol_Phantom.webp"
+        "weapon": "Sheriff",
+        "image": "C:\\Users\\eoss\\twitch-eoss\\sound-skins-quiz\\img\\Protocol_Sheriff.webp"
       }
     ]
   },
   {
     "collection": "RGX",
-    "sfx": "/home/eoss/Рабочий стол/sounds&skins/sfx/RGX.mp3",
+    "sfx": "C:\\Users\\eoss\\twitch-eoss\\sound-skins-quiz\\sfx\\RGX.mp3",
     "skins": [
       {
         "weapon": "Operator",
-        "image": "/home/eoss/Рабочий стол/sounds&skins/img/RGX_Operator.webp"
+        "image": "C:\\Users\\eoss\\twitch-eoss\\sound-skins-quiz\\img\\RGX_Operator.webp"
       },
       {
         "weapon": "Phantom",
-        "image": "/home/eoss/Рабочий стол/sounds&skins/img/RGX_Phantom.webp"
+        "image": "C:\\Users\\eoss\\twitch-eoss\\sound-skins-quiz\\img\\RGX_Phantom.webp"
       },
       {
         "weapon": "Vandal",
-        "image": "/home/eoss/Рабочий стол/sounds&skins/img/RGX_Vandal.webp"
+        "image": "C:\\Users\\eoss\\twitch-eoss\\sound-skins-quiz\\img\\RGX_Vandal.webp"
       }
     ]
   },
   {
     "collection": "Reaver",
-    "sfx": "/home/eoss/Рабочий стол/sounds&skins/sfx/Reaver.mp3",
+    "sfx": "C:\\Users\\eoss\\twitch-eoss\\sound-skins-quiz\\sfx\\Reaver.mp3",
     "skins": [
       {
+        "weapon": "Ghost",
+        "image": "C:\\Users\\eoss\\twitch-eoss\\sound-skins-quiz\\img\\Reaver_Ghost.webp"
+      },
+      {
         "weapon": "Operator",
-        "image": "/home/eoss/Рабочий стол/sounds&skins/img/Reaver_Operator.webp"
+        "image": "C:\\Users\\eoss\\twitch-eoss\\sound-skins-quiz\\img\\Reaver_Operator.webp"
       },
       {
         "weapon": "Phantom",
-        "image": "/home/eoss/Рабочий стол/sounds&skins/img/Reaver_Phantom.webp"
-      },
-      {
-        "weapon": "Ghost",
-        "image": "/home/eoss/Рабочий стол/sounds&skins/img/Reaver_Ghost.webp"
+        "image": "C:\\Users\\eoss\\twitch-eoss\\sound-skins-quiz\\img\\Reaver_Phantom.webp"
       },
       {
         "weapon": "Sheriff",
-        "image": "/home/eoss/Рабочий стол/sounds&skins/img/Reaver_Sheriff.webp"
+        "image": "C:\\Users\\eoss\\twitch-eoss\\sound-skins-quiz\\img\\Reaver_Sheriff.webp"
       },
       {
         "weapon": "Vandal",
-        "image": "/home/eoss/Рабочий стол/sounds&skins/img/Reaver_Vandal.webp"
+        "image": "C:\\Users\\eoss\\twitch-eoss\\sound-skins-quiz\\img\\Reaver_Vandal.webp"
       }
     ]
   },
   {
     "collection": "Recon",
-    "sfx": "/home/eoss/Рабочий стол/sounds&skins/sfx/Recon.mp3",
+    "sfx": "C:\\Users\\eoss\\twitch-eoss\\sound-skins-quiz\\sfx\\Recon.mp3",
     "skins": [
       {
         "weapon": "Ghost",
-        "image": "/home/eoss/Рабочий стол/sounds&skins/img/Recon_Ghost.webp"
+        "image": "C:\\Users\\eoss\\twitch-eoss\\sound-skins-quiz\\img\\Recon_Ghost.webp"
       },
       {
         "weapon": "Phantom",
-        "image": "/home/eoss/Рабочий стол/sounds&skins/img/Recon_Phantom.webp"
+        "image": "C:\\Users\\eoss\\twitch-eoss\\sound-skins-quiz\\img\\Recon_Phantom.webp"
       }
     ]
   },
   {
     "collection": "Ruination",
-    "sfx": "/home/eoss/Рабочий стол/sounds&skins/sfx/Ruination.mp3",
+    "sfx": "C:\\Users\\eoss\\twitch-eoss\\sound-skins-quiz\\sfx\\Ruination.mp3",
     "skins": [
       {
-        "weapon": "Phantom",
-        "image": "/home/eoss/Рабочий стол/sounds&skins/img/Ruination_Phantom.webp"
+        "weapon": "Ghost",
+        "image": "C:\\Users\\eoss\\twitch-eoss\\sound-skins-quiz\\img\\Ruination_Ghost.webp"
       },
       {
-        "weapon": "Ghost",
-        "image": "/home/eoss/Рабочий стол/sounds&skins/img/Ruination_Ghost.webp"
+        "weapon": "Phantom",
+        "image": "C:\\Users\\eoss\\twitch-eoss\\sound-skins-quiz\\img\\Ruination_Phantom.webp"
       }
     ]
   },
   {
     "collection": "SOL",
-    "sfx": "/home/eoss/Рабочий стол/sounds&skins/sfx/SOL.mp3",
+    "sfx": "C:\\Users\\eoss\\twitch-eoss\\sound-skins-quiz\\sfx\\SOL.mp3",
     "skins": [
       {
         "weapon": "Operator",
-        "image": "/home/eoss/Рабочий стол/sounds&skins/img/SOL_Operator.webp"
-      },
-      {
-        "weapon": "Sheriff",
-        "image": "/home/eoss/Рабочий стол/sounds&skins/img/SOL_Sheriff.webp"
+        "image": "C:\\Users\\eoss\\twitch-eoss\\sound-skins-quiz\\img\\SOL_Operator.webp"
       },
       {
         "weapon": "Phantom",
-        "image": "/home/eoss/Рабочий стол/sounds&skins/img/SOL_Phantom.webp"
+        "image": "C:\\Users\\eoss\\twitch-eoss\\sound-skins-quiz\\img\\SOL_Phantom.webp"
+      },
+      {
+        "weapon": "Sheriff",
+        "image": "C:\\Users\\eoss\\twitch-eoss\\sound-skins-quiz\\img\\SOL_Sheriff.webp"
       },
       {
         "weapon": "Vandal",
-        "image": "/home/eoss/Рабочий стол/sounds&skins/img/SOL_Vandal.webp"
+        "image": "C:\\Users\\eoss\\twitch-eoss\\sound-skins-quiz\\img\\SOL_Vandal.webp"
       }
     ]
   },
   {
     "collection": "Singularity",
-    "sfx": "/home/eoss/Рабочий стол/sounds&skins/sfx/Singularity.mp3",
+    "sfx": "C:\\Users\\eoss\\twitch-eoss\\sound-skins-quiz\\sfx\\Singularity.mp3",
     "skins": [
       {
+        "weapon": "Ghost",
+        "image": "C:\\Users\\eoss\\twitch-eoss\\sound-skins-quiz\\img\\Singularity_Ghost.webp"
+      },
+      {
         "weapon": "Phantom",
-        "image": "/home/eoss/Рабочий стол/sounds&skins/img/Singularity_Phantom.webp"
+        "image": "C:\\Users\\eoss\\twitch-eoss\\sound-skins-quiz\\img\\Singularity_Phantom.webp"
       },
       {
         "weapon": "Sheriff",
-        "image": "/home/eoss/Рабочий стол/sounds&skins/img/Singularity_Sheriff.webp"
+        "image": "C:\\Users\\eoss\\twitch-eoss\\sound-skins-quiz\\img\\Singularity_Sheriff.webp"
       },
       {
         "weapon": "Vandal",
-        "image": "/home/eoss/Рабочий стол/sounds&skins/img/Singularity_Vandal.webp"
-      },
-      {
-        "weapon": "Ghost",
-        "image": "/home/eoss/Рабочий стол/sounds&skins/img/Singularity_Ghost.webp"
+        "image": "C:\\Users\\eoss\\twitch-eoss\\sound-skins-quiz\\img\\Singularity_Vandal.webp"
       }
     ]
   },
   {
     "collection": "Solarstride",
-    "sfx": "/home/eoss/Рабочий стол/sounds&skins/sfx/Solarstride.mp3",
+    "sfx": "C:\\Users\\eoss\\twitch-eoss\\sound-skins-quiz\\sfx\\Solarstride.mp3",
     "skins": [
       {
         "weapon": "Vandal",
-        "image": "/home/eoss/Рабочий стол/sounds&skins/img/Solarstride_Vandal.webp"
+        "image": "C:\\Users\\eoss\\twitch-eoss\\sound-skins-quiz\\img\\Solarstride_Vandal.webp"
       }
     ]
   },
   {
     "collection": "Sovereign",
-    "sfx": "/home/eoss/Рабочий стол/sounds&skins/sfx/Sovereign.mp3",
+    "sfx": "C:\\Users\\eoss\\twitch-eoss\\sound-skins-quiz\\sfx\\Sovereign.mp3",
     "skins": [
       {
         "weapon": "Ghost",
-        "image": "/home/eoss/Рабочий стол/sounds&skins/img/Sovereign_Ghost.webp"
+        "image": "C:\\Users\\eoss\\twitch-eoss\\sound-skins-quiz\\img\\Sovereign_Ghost.webp"
       },
       {
         "weapon": "Phantom",
-        "image": "/home/eoss/Рабочий стол/sounds&skins/img/Sovereign_Phantom.webp"
+        "image": "C:\\Users\\eoss\\twitch-eoss\\sound-skins-quiz\\img\\Sovereign_Phantom.webp"
       }
     ]
   },
   {
     "collection": "Spectrum",
-    "sfx": "/home/eoss/Рабочий стол/sounds&skins/sfx/Spectrum.mp3",
+    "sfx": "C:\\Users\\eoss\\twitch-eoss\\sound-skins-quiz\\sfx\\Spectrum.mp3",
     "skins": [
       {
         "weapon": "Phantom",
-        "image": "/home/eoss/Рабочий стол/sounds&skins/img/Spectrum_Phantom.webp"
+        "image": "C:\\Users\\eoss\\twitch-eoss\\sound-skins-quiz\\img\\Spectrum_Phantom.webp"
       }
     ]
   },
   {
     "collection": "SplashX",
-    "sfx": "/home/eoss/Рабочий стол/sounds&skins/sfx/SplashX.mp3",
+    "sfx": "C:\\Users\\eoss\\twitch-eoss\\sound-skins-quiz\\sfx\\SplashX.mp3",
     "skins": [
       {
         "weapon": "Operator",
-        "image": "/home/eoss/Рабочий стол/sounds&skins/img/SplashX_Operator.webp"
+        "image": "C:\\Users\\eoss\\twitch-eoss\\sound-skins-quiz\\img\\SplashX_Operator.webp"
       },
       {
         "weapon": "Vandal",
-        "image": "/home/eoss/Рабочий стол/sounds&skins/img/SplashX_Vandal.webp"
+        "image": "C:\\Users\\eoss\\twitch-eoss\\sound-skins-quiz\\img\\SplashX_Vandal.webp"
       }
     ]
   },
   {
     "collection": "Valiant",
-    "sfx": "/home/eoss/Рабочий стол/sounds&skins/sfx/Valiant.mp3",
+    "sfx": "C:\\Users\\eoss\\twitch-eoss\\sound-skins-quiz\\sfx\\Valiant.mp3",
     "skins": [
       {
-        "weapon": "Vandal",
-        "image": "/home/eoss/Рабочий стол/sounds&skins/img/Valiant_Vandal.webp"
-      },
-      {
         "weapon": "Ghost",
-        "image": "/home/eoss/Рабочий стол/sounds&skins/img/Valiant_Ghost.webp"
+        "image": "C:\\Users\\eoss\\twitch-eoss\\sound-skins-quiz\\img\\Valiant_Ghost.webp"
       },
       {
         "weapon": "Operator",
-        "image": "/home/eoss/Рабочий стол/sounds&skins/img/Valiant_Operator.webp"
+        "image": "C:\\Users\\eoss\\twitch-eoss\\sound-skins-quiz\\img\\Valiant_Operator.webp"
+      },
+      {
+        "weapon": "Vandal",
+        "image": "C:\\Users\\eoss\\twitch-eoss\\sound-skins-quiz\\img\\Valiant_Vandal.webp"
       }
     ]
   },
   {
     "collection": "XEROFANG",
-    "sfx": "/home/eoss/Рабочий стол/sounds&skins/sfx/XEROFANG.mp3",
+    "sfx": "C:\\Users\\eoss\\twitch-eoss\\sound-skins-quiz\\sfx\\XEROFANG.mp3",
     "skins": [
       {
         "weapon": "Ghost",
-        "image": "/home/eoss/Рабочий стол/sounds&skins/img/XEROFANG_Ghost.webp"
+        "image": "C:\\Users\\eoss\\twitch-eoss\\sound-skins-quiz\\img\\XEROFANG_Ghost.webp"
       },
       {
         "weapon": "Vandal",
-        "image": "/home/eoss/Рабочий стол/sounds&skins/img/XEROFANG_Vandal.webp"
+        "image": "C:\\Users\\eoss\\twitch-eoss\\sound-skins-quiz\\img\\XEROFANG_Vandal.webp"
       }
     ]
   },
   {
     "collection": "default",
-    "sfx": "/home/eoss/Рабочий стол/sounds&skins/sfx/default.mp3",
+    "sfx": "C:\\Users\\eoss\\twitch-eoss\\sound-skins-quiz\\sfx\\default.mp3",
     "skins": [
       {
         "weapon": "Vandal",
-        "image": "/home/eoss/Рабочий стол/sounds&skins/img/default_Vandal.webp"
+        "image": "C:\\Users\\eoss\\twitch-eoss\\sound-skins-quiz\\img\\default_Vandal.webp"
       }
     ]
   }

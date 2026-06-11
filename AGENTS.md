@@ -1,6 +1,12 @@
-# sound-skins-quiz
+# twitch-eoss
 
-Valorant skin sound quiz for Twitch streaming. Hear a weapon firing sound, guess which skin collection it belongs to.
+Twitch streaming tools for Valorant.
+
+## Projects
+
+### sound-skins-quiz
+
+Valorant weapon skin sound quiz for Twitch streaming. Hear a weapon firing sound, guess which skin collection it belongs to.
 
 ## Quick Start
 
@@ -78,3 +84,35 @@ Trigger → Streamer.bot → POST /next_round → server
 - Preserve image aspect ratio (never force square)
 - pygame: load sound once per question (boolean flag)
 - Server runs on Android phone or Windows PC (~20 MB RAM)
+
+---
+
+## Streamer.bot
+
+Portable installation in `streamerbot/`.
+
+### OBS Connection
+- Host: `127.0.0.1:4455`
+- Password: `J4XQL1fFLDmXeODI`
+
+### Actions
+| Group | Action | Description |
+|-------|--------|-------------|
+| Cluthes | clutch_vote | Голосование за клатчи |
+| [Currency] Core System | — | Система валюты/очков |
+| Torunaments | — | Турниры |
+| Утилиты | — | Разные утилиты |
+
+### Commands
+| Command | Description |
+|---------|-------------|
+| `!quiz` | Запустить квиз (planned) |
+| `!top` | Клатч предикторы |
+| `!points` | Показать очки |
+| `!lose` / `!l` / `!невин` | Клатч проигрыш |
+
+### Running
+```bash
+cd streamerbot
+./Streamer.bot.exe
+```
