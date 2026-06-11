@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=1200, height=700">
+<title>Valorant Skin Quiz</title>
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body {
+  width: 1200px;
+  height: 700px;
+  background: transparent;
+  font-family: 'Segoe UI', Arial, sans-serif;
+  overflow: hidden;
+  user-select: none;
+}
+.container {
+  width: 1200px;
+  height: 700px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px 20px;
+}
+.weapon-label {
+  font-size: 42px;
+  font-weight: bold;
+  color: #ffd966;
+  text-shadow: 0 0 20px rgba(255,217,102,0.5), 2px 2px 4px rgba(0,0,0,0.8);
+  margin-bottom: 4px;
+}
+.timer-bar {
+  width: 800px;
+  height: 6px;
+  background: rgba(255,255,255,0.1);
+  border-radius: 3px;
+  margin-bottom: 12px;
+  overflow: hidden;
+}
+.timer-fill {
+  height: 100%;
+  background: linear-gradient(90deg, #ff4444, #ffd966, #44ff44);
+  border-radius: 3px;
+  transition: width 0.1s linear;
+  width: 100%;
+}
+.cards {
+  display: flex;
+  gap: 16px;
+  justify-content: center;
+}
+.card {
+  width: 260px;
+  height: 400px;
+  background: rgba(20, 20, 35, 0.92);
+  border: 3px solid rgba(80, 80, 120, 0.6);
+  border-radius: 16px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 12px;
+  transition: all 0.3s ease;
+  position: relative;
+}
+.card .label {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  background: rgba(255,217,102,0.15);
+  color: #ffd966;
+  font-size: 22px;
+  font-weight: bold;
+  width: 36px;
+  height: 36px;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.card img {
+  max-width: 220px;
+  max-height: 260px;
+  object-fit: contain;
+  border-radius: 8px;
+}
+.card .name {
+  color: #ffd966;
+  font-size: 16px;
+  font-weight: bold;
+  margin-top: 10px;
+  text-align: center;
+}
+.card.correct {
+  border-color: #44cc88;
+  box-shadow: 0 0 30px rgba(68,204,136,0.5);
+}
+.card.wrong {
+  border-color: #cc4444;
+  box-shadow: 0 0 30px rgba(204,68,68,0.5);
+  opacity: 0.6;
+}
+.card.voted {
+  border-color: #ffd966;
+  box-shadow: 0 0 25px rgba(255,217,102,0.4);
+}
+.result-text {
+  font-size: 36px;
+  font-weight: bold;
+  margin-top: 8px;
+  text-shadow: 0 0 15px rgba(0,0,0,0.8);
+}
+.result-text.correct { color: #44cc88; }
+.result-text.wrong { color: #ff4444; }
+.score {
+  position: fixed;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 20px;
+  color: rgba(255,255,255,0.5);
+}
+.idle-msg {
+  color: rgba(255,255,255,0.3);
+  font-size: 28px;
+  margin-top: 200px;
+}
+</style>
+</head>
+<body>
+<div class="container" id="app">
+  <div class="idle-msg">Ожидание...</div>
+</div>
+<audio id="sfx" preload="auto"></audio>
+<script>
+const app = document.getElementById('app');
+const sfx = document.getElementById('sfx');
+let prevState = 'idle';
+let playStarted = false;
+
+async function poll() {
+  try {
+    const res = await fetch('/state');
+    const data = await res.json();
+
+    if (data.state === 'playing' && prevState !== 'playing') {
+      playStarted = false;
+    }
+    prevState = data.state;
+
+    if (data.state === 'idle') {
+      app.innerHTML = '<div class="idle-msg">Ожидание...</div>';
+    } else if (data.state === 'playing') {
+      renderPlaying(data);
+      if (!playStarted && data.sfx_url) {
+        sfx.src = data.sfx_url;
+        sfx.play().catch(() => {});
+        playStarted = true;
+      }
+    } else if (data.state === 'feedback') {
+      renderFeedback(data);
+    }
+  } catch(e) {}
+  setTimeout(poll, 300);
+}
+
+function renderPlaying(data) {
+  let html = `<div class="weapon-label">${data.weapon}</div>`;
+  html += `<div class="timer-bar"><div class="timer-fill" id="timer"></div></div>`;
+  html += `<div class="cards">`;
+  for (const opt of data.options) {
+    html += `
+      <div class="card">
+        <div class="label">${opt.label}</div>
+        <img src="${opt.image_url}" alt="${opt.collection}">
+        <div class="name">${opt.collection}</div>
+      </div>`;
+  }
+  html += `</div>`;
+  html += `<div class="score">${data.score || 0} / ${data.total || 0}</div>`;
+  app.innerHTML = html;
+}
+
+function renderFeedback(data) {
+  let html = `<div class="weapon-label">${data.weapon}</div>`;
+  const isCorrect = data.correct_label;
+  html += `<div class="result-text ${data.correct_label ? '' : ''}"></div>`;
+  html += `<div class="cards">`;
+  for (const opt of data.options) {
+    let cls = '';
+    if (opt.label === data.correct_label) cls = 'correct';
+    html += `
+      <div class="card ${cls}">
+        <div class="label">${opt.label}</div>
+        <img src="${opt.image_url}" alt="${opt.collection}">
+        <div class="name">${opt.collection}</div>
+      </div>`;
+  }
+  html += `</div>`;
+  html += `<div class="score">${data.score || 0} / ${data.total || 0}</div>`;
+  app.innerHTML = html;
+}
+
+poll();
+</script>
+</body>
+</html>
