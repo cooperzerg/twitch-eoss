@@ -3,6 +3,8 @@
 
 import json
 import random
+import socket
+import threading
 from pathlib import Path
 from collections import defaultdict
 from flask import Flask, jsonify, request, send_from_directory
@@ -263,7 +265,43 @@ def overwolf_event():
     return jsonify({"ok": True, "ignored": True})
 
 
+UDP_PORT = 9999
+
+
+def udp_listener():
+    sock = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
+    sock.setsockopt(socket.SOL_SOCKET, socket.SO_REUSEADDR, 1)
+    sock.bind(("0.0.0.0", UDP_PORT))
+    print(f"UDP listener on port {UDP_PORT}")
+    while True:
+        data, addr = sock.recvfrom(1024)
+        try:
+            msg = json.loads(data.decode("utf-8"))
+            action = msg.get("action", "")
+            if action == "quiz_start":
+                questions = msg.get("questions", 1)
+                with app.test_request_context(
+                    "/next_round", method="POST",
+                    data=json.dumps({"questions": questions}),
+                    content_type="application/json"
+                ):
+                    next_round()
+                print(f"Quiz started via UDP: {questions} questions")
+            elif action == "quiz_vote":
+                char = msg.get("char", "")
+                username = msg.get("username", "unknown")
+                with app.test_request_context(
+                    "/vote/chat", method="POST",
+                    data=json.dumps({"char": char, "username": username}),
+                    content_type="application/json"
+                ):
+                    vote_chat()
+        except Exception as e:
+            print(f"UDP error: {e}")
+
+
 if __name__ == "__main__":
     load_data()
     print(f"Loaded {len(collections)} collections, {len(all_skins)} skins")
+    threading.Thread(target=udp_listener, daemon=True).start()
     app.run(host="0.0.0.0", port=8081, debug=False)
