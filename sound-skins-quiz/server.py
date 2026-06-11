@@ -280,24 +280,41 @@ def udp_listener():
             action = msg.get("action", "")
             if action == "quiz_start":
                 questions = msg.get("questions", 1)
-                with app.test_request_context(
-                    "/next_round", method="POST",
-                    data=json.dumps({"questions": questions}),
-                    content_type="application/json"
-                ):
-                    next_round()
+                start_quiz(questions)
                 print(f"Quiz started via UDP: {questions} questions")
             elif action == "quiz_vote":
                 char = msg.get("char", "")
                 username = msg.get("username", "unknown")
-                with app.test_request_context(
-                    "/vote/chat", method="POST",
-                    data=json.dumps({"char": char, "username": username}),
-                    content_type="application/json"
-                ):
-                    vote_chat()
+                do_vote_chat(char, username)
         except Exception as e:
             print(f"UDP error: {e}")
+
+
+def start_quiz(questions):
+    global current_question, current_options, state, vote_map, voters, quiz_round, quiz_total, score, total_played
+    quiz_total = questions
+    quiz_round = 0
+    score = 0
+    total_played = 0
+    q = generate_question()
+    if not q:
+        print("No questions available")
+        return
+    current_question = q
+    current_options = q["options"]
+    state = "playing"
+    vote_map = {"A": 0, "B": 0, "C": 0, "D": 0}
+    voters = {"A": [], "B": [], "C": [], "D": []}
+    quiz_round += 1
+
+
+def do_vote_chat(char, username):
+    global vote_map, voters
+    mapped = CHAR_MAP.get(char, "")
+    if mapped in vote_map:
+        vote_map[mapped] += 1
+        if username not in voters[mapped]:
+            voters[mapped].append(username)
 
 
 if __name__ == "__main__":
