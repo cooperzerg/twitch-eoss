@@ -125,6 +125,17 @@ body {
   font-size: 28px;
   margin-top: 200px;
 }
+.round-info {
+  color: rgba(255,255,255,0.5);
+  font-size: 16px;
+  margin-bottom: 8px;
+}
+.voters {
+  color: rgba(255,255,255,0.7);
+  font-size: 18px;
+  margin-top: 10px;
+  text-align: center;
+}
 </style>
 </head>
 <body>
@@ -166,6 +177,9 @@ async function poll() {
 
 function renderPlaying(data) {
   let html = `<div class="weapon-label">${data.weapon}</div>`;
+  if (data.round && data.total_rounds) {
+    html += `<div class="round-info">Раунд ${data.round} из ${data.total_rounds}</div>`;
+  }
   html += `<div class="timer-bar"><div class="timer-fill" id="timer"></div></div>`;
   html += `<div class="cards">`;
   for (const opt of data.options) {
@@ -183,8 +197,7 @@ function renderPlaying(data) {
 
 function renderFeedback(data) {
   let html = `<div class="weapon-label">${data.weapon}</div>`;
-  const isCorrect = data.correct_label;
-  html += `<div class="result-text ${data.correct_label ? '' : ''}"></div>`;
+  html += `<div class="result-text">Правильный ответ: ${data.correct_collection}</div>`;
   html += `<div class="cards">`;
   for (const opt of data.options) {
     let cls = '';
@@ -197,6 +210,13 @@ function renderFeedback(data) {
       </div>`;
   }
   html += `</div>`;
+  
+  if (data.correct_voters && data.correct_voters.length > 0) {
+    html += `<div class="voters">Угадали: ${data.correct_voters.join(', ')}</div>`;
+  } else {
+    html += `<div class="voters">Никто не угадал</div>`;
+  }
+  
   html += `<div class="score">${data.score || 0} / ${data.total || 0}</div>`;
   app.innerHTML = html;
 }

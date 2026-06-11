@@ -125,7 +125,19 @@ def serve_img(name):
 
 @app.route("/next_round", methods=["POST"])
 def next_round():
-    global current_question, current_options, state, vote_map
+    global current_question, current_options, state, vote_map, voters, quiz_round, quiz_total, score, total_played
+    data = request.get_json(force=True) if request.is_json else {}
+
+    if state == "idle":
+        quiz_total = data.get("questions", 1)
+        quiz_round = 0
+        score = 0
+        total_played = 0
+
+    if quiz_round >= quiz_total and quiz_total > 0:
+        state = "idle"
+        return jsonify({"error": "quiz finished", "score": score, "total": total_played})
+
     q = generate_question()
     if not q:
         return jsonify({"error": "no questions available"}), 500
@@ -134,8 +146,12 @@ def next_round():
     current_options = q["options"]
     state = "playing"
     vote_map = {"A": 0, "B": 0, "C": 0, "D": 0}
+    voters = {"A": [], "B": [], "C": [], "D": []}
+    quiz_round += 1
 
     return jsonify({
+        "round": quiz_round,
+        "total": quiz_total,
         "weapon": q["weapon"],
         "sfx_url": q["sfx_url"],
         "options": [{"label": o["label"], "collection": o["collection"], "image_url": o["image_url"]} for o in q["options"]],
@@ -171,7 +187,7 @@ def vote():
 
 @app.route("/state", methods=["GET"])
 def get_state():
-    resp = {"state": state, "score": score, "total": total_played}
+    resp = {"state": state, "score": score, "total": total_played, "round": quiz_round, "total_rounds": quiz_total}
     if state == "playing" and current_question:
         resp["weapon"] = current_question["weapon"]
         resp["sfx_url"] = current_question["sfx_url"]
@@ -181,44 +197,67 @@ def get_state():
         resp["correct_collection"] = current_question["collection"]
         resp["correct_label"] = next((o["label"] for o in current_options if o["collection"] == current_question["collection"]), "")
         resp["options"] = [{"label": o["label"], "collection": o["collection"], "image_url": o["image_url"]} for o in current_options]
+        resp["correct_voters"] = voters.get(resp["correct_label"], [])
     return jsonify(resp)
 
 
 @app.route("/reset", methods=["POST"])
 def reset():
-    global state, score, total_played, current_question
+    global state, score, total_played, current_question, quiz_round, quiz_total
     state = "idle"
     score = 0
     total_played = 0
     current_question = None
+    quiz_round = 0
+    quiz_total = 0
     return jsonify({"ok": True})
 
 
 @app.route("/vote/chat", methods=["POST"])
 def vote_chat():
-    global vote_map
+    global vote_map, voters
     data = request.get_json(force=True)
     char = data.get("char", "")
+    username = data.get("username", "anonymous")
     mapped = CHAR_MAP.get(char, "")
     if mapped in vote_map:
         vote_map[mapped] += 1
-    return jsonify({"votes": vote_map})
+        if username not in voters[mapped]:
+            voters[mapped].append(username)
+    return jsonify({"votes": vote_map, "voters": voters})
 
 
 @app.route("/vote/result", methods=["GET"])
 def vote_result():
-    global vote_map
+    global vote_map, voters
     if not vote_map:
         return jsonify({"winner": None})
     winner = max(vote_map, key=vote_map.get)
     if vote_map[winner] == 0:
         return jsonify({"winner": None, "votes": vote_map})
-    return jsonify({"winner": winner, "votes": vote_map})
+    return jsonify({
+        "winner": winner,
+        "votes": vote_map,
+        "voters": voters,
+        "correct_voters": voters.get(winner, [])
+    })
 
 
 @app.route("/health", methods=["GET"])
 def health():
     return jsonify({"ok": True, "collections": len(collections), "skins": len(all_skins)})
+
+
+@app.route("/overwolf", methods=["POST"])
+def overwolf_event():
+    global state
+    if state != "idle":
+        return jsonify({"error": "quiz already running"}), 409
+    data = request.get_json(force=True)
+    event_type = data.get("event", "")
+    if event_type == "kills" and data.get("count", 0) >= 3:
+        return next_round()
+    return jsonify({"ok": True, "ignored": True})
 
 
 if __name__ == "__main__":
