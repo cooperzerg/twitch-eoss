@@ -16,8 +16,8 @@ cd sound-skins-quiz
 # Web overlay (for Streamer.bot + OBS)
 pip install flask
 python server.py
-# Open http://localhost:8080 in browser
-# OBS Browser Source: http://localhost:8080 (1200x700)
+# Open http://localhost:8081 in browser
+# OBS Browser Source: http://localhost:8081 (1200x700)
 
 # Standalone pygame version
 pip install pygame
@@ -62,7 +62,7 @@ Trigger → Streamer.bot → POST /next_round → server
 ```
 
 ### OBS Settings
-- Browser Source: `http://<server_ip>:8080`
+- Browser Source: `http://<server_ip>:8081`
 - Resolution: 1200x700
 - Custom CSS: leave empty
 - Audio: Monitor Off (streamer doesn't hear quiz sounds)
