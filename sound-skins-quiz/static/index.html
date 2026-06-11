@@ -2,139 +2,121 @@
 <html lang="ru">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=1200, height=700">
+<meta name="viewport" content="width=400, height=500">
 <title>Valorant Skin Quiz</title>
 <style>
 * { margin: 0; padding: 0; box-sizing: border-box; }
 body {
-  width: 1200px;
-  height: 700px;
+  width: 400px;
+  height: 500px;
   background: transparent;
   font-family: 'Segoe UI', Arial, sans-serif;
   overflow: hidden;
   user-select: none;
 }
 .container {
-  width: 1200px;
-  height: 700px;
+  width: 400px;
+  height: 500px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 10px 20px;
+  padding: 10px;
 }
 .weapon-label {
-  font-size: 42px;
+  font-size: 28px;
   font-weight: bold;
   color: #ffd966;
   text-shadow: 0 0 20px rgba(255,217,102,0.5), 2px 2px 4px rgba(0,0,0,0.8);
   margin-bottom: 4px;
 }
+.round-info {
+  color: rgba(255,255,255,0.5);
+  font-size: 14px;
+  margin-bottom: 6px;
+}
 .timer-bar {
-  width: 800px;
-  height: 6px;
+  width: 100%;
+  height: 4px;
   background: rgba(255,255,255,0.1);
-  border-radius: 3px;
-  margin-bottom: 12px;
+  border-radius: 2px;
+  margin-bottom: 10px;
   overflow: hidden;
 }
 .timer-fill {
   height: 100%;
   background: linear-gradient(90deg, #ff4444, #ffd966, #44ff44);
-  border-radius: 3px;
+  border-radius: 2px;
   transition: width 0.1s linear;
   width: 100%;
 }
-.cards {
-  display: flex;
-  gap: 16px;
-  justify-content: center;
-}
-.card {
-  width: 260px;
-  height: 400px;
-  background: rgba(20, 20, 35, 0.92);
-  border: 3px solid rgba(80, 80, 120, 0.6);
-  border-radius: 16px;
+.options {
+  width: 100%;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  padding: 12px;
-  transition: all 0.3s ease;
-  position: relative;
+  gap: 8px;
 }
-.card .label {
-  position: absolute;
-  top: 10px;
-  left: 10px;
+.option {
+  width: 100%;
+  height: 80px;
+  background: rgba(20, 20, 35, 0.92);
+  border: 2px solid rgba(80, 80, 120, 0.6);
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  padding: 8px 12px;
+  gap: 12px;
+  transition: all 0.3s ease;
+}
+.option.correct {
+  border-color: #44cc88;
+  box-shadow: 0 0 20px rgba(68,204,136,0.4);
+}
+.option.wrong {
+  border-color: #cc4444;
+  opacity: 0.6;
+}
+.option .label {
   background: rgba(255,217,102,0.15);
   color: #ffd966;
-  font-size: 22px;
+  font-size: 18px;
   font-weight: bold;
-  width: 36px;
-  height: 36px;
-  border-radius: 8px;
+  width: 32px;
+  height: 32px;
+  border-radius: 6px;
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-shrink: 0;
 }
-.card img {
-  max-width: 220px;
-  max-height: 260px;
+.option img {
+  width: 60px;
+  height: 60px;
   object-fit: contain;
-  border-radius: 8px;
+  border-radius: 6px;
+  flex-shrink: 0;
 }
-.card .name {
+.option .name {
   color: #ffd966;
-  font-size: 16px;
+  font-size: 14px;
   font-weight: bold;
-  margin-top: 10px;
-  text-align: center;
-}
-.card.correct {
-  border-color: #44cc88;
-  box-shadow: 0 0 30px rgba(68,204,136,0.5);
-}
-.card.wrong {
-  border-color: #cc4444;
-  box-shadow: 0 0 30px rgba(204,68,68,0.5);
-  opacity: 0.6;
-}
-.card.voted {
-  border-color: #ffd966;
-  box-shadow: 0 0 25px rgba(255,217,102,0.4);
-}
-.result-text {
-  font-size: 36px;
-  font-weight: bold;
-  margin-top: 8px;
-  text-shadow: 0 0 15px rgba(0,0,0,0.8);
-}
-.result-text.correct { color: #44cc88; }
-.result-text.wrong { color: #ff4444; }
-.score {
-  position: fixed;
-  bottom: 10px;
-  left: 50%;
-  transform: translateX(-50%);
-  font-size: 20px;
-  color: rgba(255,255,255,0.5);
-}
-.idle-msg {
-  color: rgba(255,255,255,0.3);
-  font-size: 28px;
-  margin-top: 200px;
-}
-.round-info {
-  color: rgba(255,255,255,0.5);
-  font-size: 16px;
-  margin-bottom: 8px;
 }
 .voters {
   color: rgba(255,255,255,0.7);
-  font-size: 18px;
-  margin-top: 10px;
+  font-size: 14px;
+  margin-top: 8px;
   text-align: center;
+}
+.result-text {
+  font-size: 22px;
+  font-weight: bold;
+  margin: 6px 0;
+  text-shadow: 0 0 10px rgba(0,0,0,0.8);
+  color: #ffd966;
+}
+.idle-msg {
+  color: rgba(255,255,255,0.3);
+  font-size: 20px;
+  margin-top: 150px;
 }
 </style>
 </head>
@@ -176,48 +158,44 @@ async function poll() {
 }
 
 function renderPlaying(data) {
-  let html = `<div class="weapon-label">${data.weapon}</div>`;
+  let html = '<div class="weapon-label">' + data.weapon + '</div>';
   if (data.round && data.total_rounds) {
-    html += `<div class="round-info">Раунд ${data.round} из ${data.total_rounds}</div>`;
+    html += '<div class="round-info">Раунд ' + data.round + ' из ' + data.total_rounds + '</div>';
   }
-  html += `<div class="timer-bar"><div class="timer-fill" id="timer"></div></div>`;
-  html += `<div class="cards">`;
+  html += '<div class="timer-bar"><div class="timer-fill" id="timer"></div></div>';
+  html += '<div class="options">';
   for (const opt of data.options) {
-    html += `
-      <div class="card">
-        <div class="label">${opt.label}</div>
-        <img src="${opt.image_url}" alt="${opt.collection}">
-        <div class="name">${opt.collection}</div>
-      </div>`;
+    html += '<div class="option">' +
+      '<div class="label">' + opt.label + '</div>' +
+      '<img src="' + opt.image_url + '" alt="' + opt.collection + '">' +
+      '<div class="name">' + opt.collection + '</div>' +
+      '</div>';
   }
-  html += `</div>`;
-  html += `<div class="score">${data.score || 0} / ${data.total || 0}</div>`;
+  html += '</div>';
   app.innerHTML = html;
 }
 
 function renderFeedback(data) {
-  let html = `<div class="weapon-label">${data.weapon}</div>`;
-  html += `<div class="result-text">Правильный ответ: ${data.correct_collection}</div>`;
-  html += `<div class="cards">`;
+  let html = '<div class="weapon-label">' + data.weapon + '</div>';
+  html += '<div class="result-text">Ответ: ' + data.correct_collection + '</div>';
+  html += '<div class="options">';
   for (const opt of data.options) {
     let cls = '';
     if (opt.label === data.correct_label) cls = 'correct';
-    html += `
-      <div class="card ${cls}">
-        <div class="label">${opt.label}</div>
-        <img src="${opt.image_url}" alt="${opt.collection}">
-        <div class="name">${opt.collection}</div>
-      </div>`;
+    html += '<div class="option ' + cls + '">' +
+      '<div class="label">' + opt.label + '</div>' +
+      '<img src="' + opt.image_url + '" alt="' + opt.collection + '">' +
+      '<div class="name">' + opt.collection + '</div>' +
+      '</div>';
   }
-  html += `</div>`;
-  
+  html += '</div>';
+
   if (data.correct_voters && data.correct_voters.length > 0) {
-    html += `<div class="voters">Угадали: ${data.correct_voters.join(', ')}</div>`;
+    html += '<div class="voters">Угадали: ' + data.correct_voters.join(', ') + '</div>';
   } else {
-    html += `<div class="voters">Никто не угадал</div>`;
+    html += '<div class="voters">Никто не угадал</div>';
   }
-  
-  html += `<div class="score">${data.score || 0} / ${data.total || 0}</div>`;
+
   app.innerHTML = html;
 }
 
