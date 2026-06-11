@@ -2,28 +2,28 @@
 <html lang="ru">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=400, height=500">
+<meta name="viewport" content="width=1200, height=700">
 <title>Valorant Skin Quiz</title>
 <style>
 * { margin: 0; padding: 0; box-sizing: border-box; }
 body {
-  width: 400px;
-  height: 500px;
+  width: 1200px;
+  height: 700px;
   background: transparent;
   font-family: 'Segoe UI', Arial, sans-serif;
   overflow: hidden;
   user-select: none;
 }
 .container {
-  width: 400px;
-  height: 500px;
+  width: 1200px;
+  height: 700px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 10px;
+  padding: 10px 20px;
 }
 .weapon-label {
-  font-size: 28px;
+  font-size: 42px;
   font-weight: bold;
   color: #ffd966;
   text-shadow: 0 0 20px rgba(255,217,102,0.5), 2px 2px 4px rgba(0,0,0,0.8);
@@ -31,11 +31,11 @@ body {
 }
 .round-info {
   color: rgba(255,255,255,0.5);
-  font-size: 14px;
+  font-size: 16px;
   margin-bottom: 6px;
 }
 .timer-bar {
-  width: 100%;
+  width: 260px;
   height: 4px;
   background: rgba(255,255,255,0.1);
   border-radius: 2px;
@@ -49,39 +49,46 @@ body {
   transition: width 0.1s linear;
   width: 100%;
 }
-.options {
-  width: 100%;
+.card {
+  width: 260px;
+  height: 400px;
+  background: rgba(20, 20, 35, 0.92);
+  border: 3px solid rgba(80, 80, 120, 0.6);
+  border-radius: 16px;
   display: flex;
   flex-direction: column;
-  gap: 8px;
+  align-items: center;
+  padding: 12px 8px;
+  transition: all 0.3s ease;
+}
+.options {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  width: 100%;
+  flex: 1;
 }
 .option {
-  width: 100%;
-  height: 80px;
-  background: rgba(20, 20, 35, 0.92);
-  border: 2px solid rgba(80, 80, 120, 0.6);
-  border-radius: 10px;
   display: flex;
   align-items: center;
-  padding: 8px 12px;
-  gap: 12px;
+  gap: 8px;
+  padding: 4px 8px;
+  border-radius: 8px;
+  background: rgba(255,255,255,0.03);
+  border: 1px solid transparent;
   transition: all 0.3s ease;
 }
 .option.correct {
+  background: rgba(68,204,136,0.15);
   border-color: #44cc88;
-  box-shadow: 0 0 20px rgba(68,204,136,0.4);
-}
-.option.wrong {
-  border-color: #cc4444;
-  opacity: 0.6;
 }
 .option .label {
   background: rgba(255,217,102,0.15);
   color: #ffd966;
-  font-size: 18px;
+  font-size: 14px;
   font-weight: bold;
-  width: 32px;
-  height: 32px;
+  width: 24px;
+  height: 24px;
   border-radius: 6px;
   display: flex;
   align-items: center;
@@ -89,34 +96,34 @@ body {
   flex-shrink: 0;
 }
 .option img {
-  width: 60px;
-  height: 60px;
+  width: 50px;
+  height: 50px;
   object-fit: contain;
-  border-radius: 6px;
+  border-radius: 4px;
   flex-shrink: 0;
 }
 .option .name {
   color: #ffd966;
-  font-size: 14px;
+  font-size: 12px;
   font-weight: bold;
+}
+.result-text {
+  font-size: 18px;
+  font-weight: bold;
+  margin: 8px 0;
+  text-shadow: 0 0 10px rgba(0,0,0,0.8);
+  color: #ffd966;
 }
 .voters {
   color: rgba(255,255,255,0.7);
   font-size: 14px;
-  margin-top: 8px;
+  margin-top: 6px;
   text-align: center;
-}
-.result-text {
-  font-size: 22px;
-  font-weight: bold;
-  margin: 6px 0;
-  text-shadow: 0 0 10px rgba(0,0,0,0.8);
-  color: #ffd966;
 }
 .idle-msg {
   color: rgba(255,255,255,0.3);
-  font-size: 20px;
-  margin-top: 150px;
+  font-size: 28px;
+  margin-top: 200px;
 }
 </style>
 </head>
@@ -163,6 +170,7 @@ function renderPlaying(data) {
     html += '<div class="round-info">Раунд ' + data.round + ' из ' + data.total_rounds + '</div>';
   }
   html += '<div class="timer-bar"><div class="timer-fill" id="timer"></div></div>';
+  html += '<div class="card">';
   html += '<div class="options">';
   for (const opt of data.options) {
     html += '<div class="option">' +
@@ -171,13 +179,14 @@ function renderPlaying(data) {
       '<div class="name">' + opt.collection + '</div>' +
       '</div>';
   }
-  html += '</div>';
+  html += '</div></div>';
   app.innerHTML = html;
 }
 
 function renderFeedback(data) {
   let html = '<div class="weapon-label">' + data.weapon + '</div>';
   html += '<div class="result-text">Ответ: ' + data.correct_collection + '</div>';
+  html += '<div class="card">';
   html += '<div class="options">';
   for (const opt of data.options) {
     let cls = '';
@@ -188,7 +197,7 @@ function renderFeedback(data) {
       '<div class="name">' + opt.collection + '</div>' +
       '</div>';
   }
-  html += '</div>';
+  html += '</div></div>';
 
   if (data.correct_voters && data.correct_voters.length > 0) {
     html += '<div class="voters">Угадали: ' + data.correct_voters.join(', ') + '</div>';
