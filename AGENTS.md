@@ -1,28 +1,21 @@
-# sounds&skins
+# sound-skins-quiz
 
 Valorant skin sound quiz for Twitch streaming. Hear a weapon firing sound, guess which skin collection it belongs to.
 
 ## Quick Start
 
-### Local pygame version
 ```bash
-pip install pygame
-python guess.py
-```
+cd sound-skins-quiz
 
-### Web overlay (for Streamer.bot + OBS)
-```bash
+# Web overlay (for Streamer.bot + OBS)
 pip install flask
 python server.py
 # Open http://localhost:8080 in browser
 # OBS Browser Source: http://localhost:8080 (1200x700)
-```
 
-### Android (Termux)
-```bash
-pkg install python
-pip install flask
-python server.py
+# Standalone pygame version
+pip install pygame
+python guess.py
 ```
 
 ## API Endpoints
@@ -77,6 +70,7 @@ Trigger → Streamer.bot → POST /next_round → server
 - **collection_mapping.json** — 65 collections, 140 skins
 - **sfx/** — weapon sounds (.mp3)
 - **img/** — skin images (.webp)
+- **an.py** — utility to regenerate collection_mapping.json from img/sfx folders
 
 ## Rules
 - 1 question per trigger (not multi-question blocks)

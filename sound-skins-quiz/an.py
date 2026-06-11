@@ -2,9 +2,7 @@ import json
 from pathlib import Path
 from collections import defaultdict
 
-# ===== НАСТРОЙКИ =====
-# Укажи путь к родительской папке "sounds&skins"
-ROOT = Path(r"/home/eoss/Рабочий стол/sounds&skins")  # замени на реальный
+ROOT = Path(__file__).resolve().parent
 
 IMG_DIR = ROOT / "img"
 SFX_DIR = ROOT / "sfx"
