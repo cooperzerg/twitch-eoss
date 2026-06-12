@@ -25,16 +25,13 @@ current_options = []
 state = "idle"
 score = 0
 total_played = 0
-vote_map = {"A": 0, "B": 0, "C": 0, "D": 0}
-voters = {"A": [], "B": [], "C": [], "D": []}
+vote_map = {"1": 0, "2": 0, "3": 0, "4": 0}
+voters = {"1": [], "2": [], "3": [], "4": []}
 quiz_round = 0
 quiz_total = 0
 
 CHAR_MAP = {
-    "a": "A", "A": "A", "а": "A", "А": "A",
-    "b": "B", "B": "B", "б": "B", "Б": "B",
-    "c": "C", "C": "C", "ц": "C", "Ц": "C", "с": "C", "С": "C",
-    "d": "D", "D": "D", "д": "D", "Д": "D",
+    "1": "1", "2": "2", "3": "3", "4": "4",
 }
 
 
@@ -95,7 +92,7 @@ def generate_question():
     }]
     random.shuffle(options)
 
-    labels = ["A", "B", "C", "D"]
+    labels = ["1", "2", "3", "4"]
     for i, opt in enumerate(options):
         opt["label"] = labels[i]
         opt["image_url"] = f"/img/{Path(opt['image']).name}"
@@ -150,8 +147,8 @@ def next_round():
     current_question = q
     current_options = q["options"]
     state = "playing"
-    vote_map = {"A": 0, "B": 0, "C": 0, "D": 0}
-    voters = {"A": [], "B": [], "C": [], "D": []}
+    vote_map = {"1": 0, "2": 0, "3": 0, "4": 0}
+    voters = {"1": [], "2": [], "3": [], "4": []}
     quiz_round += 1
 
     return jsonify({
@@ -303,8 +300,8 @@ def start_quiz(questions):
     current_question = q
     current_options = q["options"]
     state = "playing"
-    vote_map = {"A": 0, "B": 0, "C": 0, "D": 0}
-    voters = {"A": [], "B": [], "C": [], "D": []}
+    vote_map = {"1": 0, "2": 0, "3": 0, "4": 0}
+    voters = {"1": [], "2": [], "3": [], "4": []}
     quiz_round += 1
 
 
